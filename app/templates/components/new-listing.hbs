@@ -1,0 +1,25 @@
+{{#if addNewListing}}
+  <h1>New Listing</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="listingName">Listing Name:</label>
+          {{input value=listingName id="listingName"}}
+        </div>
+
+        <div class="form-group">
+          <label for="listingPoster">Your Name:</label>
+          {{input value=listingPoster id="listingPoster"}}
+        </div>
+
+        <div class="form-group">
+          <label for="listingCity">Your City:</label>
+          {{input value=listingCity id="listingCity"}}
+        </div>
+
+        <button {{action 'saveListing1'}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'listingFormShow'}}>New Listing</button>
+{{/if}}
