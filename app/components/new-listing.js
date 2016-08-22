@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     },
 
     saveListing1() {
-      var listingDate = moment().format('MMM Do YYYY');
+      var listingDate = moment().format('MMM Do YYYY, h:mm a');
 
       var params = {
         listingName: this.get('listingName'),

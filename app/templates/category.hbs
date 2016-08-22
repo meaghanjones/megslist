@@ -1,9 +1,5 @@
-<h2> {{model.categoryName}} </h2>
+<h2> {{model.category.categoryName}} </h2>
 
-<ul>
-  {{#each model.listings as |listing|}}
-    {{listing-tile listing=listing}}
-  {{/each}}
-</ul>
+{{listing-list category=model.category}}
 
-{{new-listing category=model saveListing2="saveListing3"}}
+{{new-listing category=model.category saveListing2="saveListing3"}}
