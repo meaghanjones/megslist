@@ -10,10 +10,8 @@ export default Ember.Route.extend({
 
   actions: {
     saveListing3(params) {
-      debugger;
       var newListing = this.store.createRecord('listing', params);
       var category = params.category;
-      console.log("category: " + category);
       category.get('listings').addObject(newListing);
       newListing.save().then(function(){
         return category.save();
