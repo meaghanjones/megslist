@@ -1,7 +1,8 @@
-# Megslist
+# Megslist 
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### August 2016, Meaghan Jones and Bang Nguyen
+
+For this project we used Ember to recreate craigslist functionality. A user can add an event with various pieces of related information.
 
 ## Prerequisites
 
